@@ -1,4 +1,5 @@
 ---
+import Hero from "../components/Hero.astro";
 import Layout from "../layouts/Layout.astro";
 import "../styles/global.css";
 ---
@@ -13,12 +14,14 @@ import "../styles/global.css";
 	</head>
 	<body>
 		<Layout>
+			<Hero />
+
 			<h1 class="text-3xl font-bold underline">
 				Hello world!
 			</h1>
 
 			<!-- Open the modal using ID.showModal() method -->
-			<button class="btn" onclick="my_modal_2.showModal()">open modal</button>
+			<button class="btn mt-8" onclick="my_modal_2.showModal()">open modal</button>
 			<dialog id="my_modal_2" class="modal">
 				<div class="modal-box">
 					<h3 class="text-lg font-bold">Hello!</h3>
