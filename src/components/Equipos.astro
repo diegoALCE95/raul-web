@@ -1,0 +1,102 @@
+---
+import { Image } from "astro:assets";
+import turbinaUno from "../img/turbina-1.png";
+import turbinaDos from "../img/turbina-2.png";
+import unidadUno from "../img/unidad-1.jpg";
+import unidadDos from "../img/unidad-2.png";
+import unidadTres from "../img/unidad-3.png";
+import lubricacion from "../img/Lubricacion.png";
+import lubricacionDos from "../img/lubricacion-2.png";
+
+const { title } = Astro.props;
+---
+<div id="equipos"></div>
+
+<div class="container mx-auto px-8 pt-20 pb-28">
+  <div>
+    <h2 class="text-5xl font-bold text-center mb-15">
+      {title}
+    </h2>
+
+    <div class="images-wrapper flex items-center justify-center gap-10">
+      <div class="modal-wrapper">
+        <Image class="hover:cursor-pointer rounded-lg" src={unidadUno} onclick="my_modal_3.showModal();" alt="asd" />
+        <!-- Open the modal using ID.showModal() method -->
+        <dialog id="my_modal_3" class="modal">
+          <div class="modal-box">
+            <h3 class="text-lg font-bold">Unidad Principal!</h3>
+            <p class="py-4">Press ESC key or click outside to close</p>
+          </div>
+          <form method="dialog" class="modal-backdrop">
+            <button>close</button>
+          </form>
+        </dialog>
+
+        <a class="btn" href="../img/1-guia-conexion-principal-f300.pdf" download>Descargar</a>
+      </div><!-- .modal-wrapper -->
+
+      <div class="modal-wrapper">
+        <Image class="hover:cursor-pointer rounded-lg" src={turbinaUno} onclick="my_modal_2.showModal();" alt="asd" />
+        <!-- Open the modal using ID.showModal() method -->
+        <dialog id="my_modal_2" class="modal">
+          <div class="modal-box">
+            <h3 class="text-lg font-bold">Turbina 1!</h3>
+            <p class="py-4">Press ESC key or click outside to close</p>
+          </div>
+          <form method="dialog" class="modal-backdrop">
+            <button>close</button>
+          </form>
+        </dialog>
+
+        <a class="btn" href="../img/2-guia-turbina-de-impulso.pdf" download>Descargar</a>
+      </div><!-- .modal-wrapper -->
+
+      <div class="modal-wrapper">
+        <Image class="hover:cursor-pointer rounded-lg" src={turbinaDos} onclick="my_modal_1.showModal();" alt="asd" />
+        <!-- Open the modal using ID.showModal() method -->
+        <dialog id="my_modal_1" class="modal">
+          <div class="modal-box">
+            <h3 class="text-lg font-bold">Turbina dos!</h3>
+            <p class="py-4">Press ESC key or click outside to close</p>
+          </div>
+          <form method="dialog" class="modal-backdrop">
+            <button>close</button>
+          </form>
+        </dialog>
+
+        <a class="btn" href="../img/3-guia-practica-turbina-reaccion-uno.pdf" download>Descargar</a>
+      </div><!-- .modal-wrapper -->
+
+      <div class="modal-wrapper">
+        <Image class="hover:cursor-pointer rounded-lg" src={lubricacion} onclick="my_modal_4.showModal();" alt="asd" />
+        <!-- Open the modal using ID.showModal() method -->
+        <dialog id="my_modal_4" class="modal">
+          <div class="modal-box">
+            <h3 class="text-lg font-bold">Lubricación!</h3>
+            <p class="py-4">Press ESC key or click outside to close</p>
+          </div>
+          <form method="dialog" class="modal-backdrop">
+            <button>close</button>
+          </form>
+        </dialog>
+
+        <div class="md:pb-10"></div>
+      </div><!-- .modal-wrapper -->
+    </div>
+  </div>
+</div>
+
+<style>
+  img {
+    height: 260px;
+    object-fit: cover;
+  }
+
+  .modal-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+</style>
