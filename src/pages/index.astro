@@ -5,6 +5,7 @@ import Equipos from "../components/Equipos.astro";
 import "../styles/global.css";
 import Implementos from "../components/Implementos.astro";
 import BIbliografia from "../components/BIbliografia.astro";
+import Creditos from "../components/Creditos.astro";
 ---
 
 <html lang="en">
@@ -13,13 +14,14 @@ import BIbliografia from "../components/BIbliografia.astro";
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Practica Flujo Compresible</title>
 	</head>
 	<body>
 		<Layout>
 			<Hero />
 			<Equipos title="Equipos" />
 			<Implementos title="Implementos" />
+			<Creditos title="Nuestro Equipo" />
 			<BIbliografia title="Bibliografia" />
 		</Layout>
 	</body>
