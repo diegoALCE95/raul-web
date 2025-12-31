@@ -6,6 +6,8 @@ import fotoRaul from "../img/foto-raul.webp";
 const { title } = Astro.props;
 ---
 
+<div id="creditos"></div>
+
 <div class="container mx-auto px-8 pt-20 pb-28">
   <h2 class="text-5xl font-bold text-center mb-15">
     {title}
@@ -13,19 +15,21 @@ const { title } = Astro.props;
 
   <div class="team">
     <div class="avatar">
-      <div class="w-44 rounded-full">
+      <div class="w-48 rounded-full">
         <Image src={fotoRaul} alt="foto Raul david villarreal" />
       </div>
+      <p class="title">Raul David Villarreal</p>
     </div>
     <div class="avatar">
-      <div class="w-44 rounded-full">
+      <div class="w-48 rounded-full">
         <img src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp" />
       </div>
     </div>
     <div class="avatar">
-      <div class="w-44 rounded-full">
+      <div class="w-48 rounded-full">
         <img src="https://img.daisyui.com/images/profile/demo/distracted1@192.webp" />
       </div>
+      <p class="title">Hernan Castro</p>
     </div>
   </div>
 </div>
@@ -34,6 +38,18 @@ const { title } = Astro.props;
   .team {
     display: flex;
     justify-content: center;
-    column-gap: 15px;
+    column-gap: 40px;
+  }
+
+  .avatar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .avatar .title {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
   }
 </style>
