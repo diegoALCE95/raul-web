@@ -20,15 +20,14 @@ const { title } = Astro.props;
 
     <div class="images-wrapper flex items-center justify-center gap-10">
       <div class="modal-wrapper">
-        <Image class="hover:cursor-pointer rounded-lg" src={unidadUno} onclick="my_modal_3.showModal();" alt="asd" />
+        <Image class="hover:cursor-pointer rounded-lg" src={unidadUno} onclick="my_modal_3.showModal();" alt="unidad principal f300 uno" />
         <!-- Open the modal using ID.showModal() method -->
         <dialog id="my_modal_3" class="modal">
           <div class="modal-box">
             <h3 class="text-4xl font-bold pb-8">Unidad Principal F300</h3>
-            <Image class="py-4" src={unidadDos} alt="unidad dos" />
-            <Image class="py-4" src={unidadTres} alt="unidad dos" />
-            <p class="py-4"></p>
-            <h3 class="text-lg font-bold pb-4">Elementos indicados en la figura</h3>
+            <Image class="py-4" src={unidadDos} alt="unidad principal f300 dos" />
+            <Image class="py-4" src={unidadTres} alt="unidad principal f300 tres" />
+            <h3 class="text-lg font-bold py-4">Elementos indicados en la figura</h3>
             <ol class="lista-elementos">
               <li>Válvula invertida flujo de entrada</li>
               <li>Salida de aire hacia la turbina</li>
@@ -50,12 +49,19 @@ const { title } = Astro.props;
       </div><!-- .modal-wrapper -->
 
       <div class="modal-wrapper">
-        <Image class="hover:cursor-pointer rounded-lg" src={turbinaUno} onclick="my_modal_2.showModal();" alt="asd" />
+        <Image class="hover:cursor-pointer rounded-lg" src={turbinaUno} onclick="my_modal_2.showModal();" alt="turbina de impulso f300 c" />
         <!-- Open the modal using ID.showModal() method -->
         <dialog id="my_modal_2" class="modal">
           <div class="modal-box">
-            <h3 class="text-lg font-bold">Turbina 1!</h3>
-            <p class="py-4">Press ESC key or click outside to close</p>
+            <h3 class="text-4xl font-bold pb-8">Turbina de impulso F300 C</h3>
+            <Image class="py-4" src={turbinaUno} alt="turbina de impulso f300 c" />
+            <h3 class="text-lg font-bold py-4">Elementos indicados en la figura</h3>
+            <ol class="lista-elementos">
+              <li>Válvulas de cierre parcial de la boquilla de entrada</li>
+              <li>Salida de aire a la unidad F300</li>
+              <li>Tornillo de ajuste para la polea de frenado</li>
+              <li>Medidor de presión de entrada</li>
+            </ol>
           </div>
           <form method="dialog" class="modal-backdrop">
             <button>close</button>
@@ -70,8 +76,14 @@ const { title } = Astro.props;
         <!-- Open the modal using ID.showModal() method -->
         <dialog id="my_modal_1" class="modal">
           <div class="modal-box">
-            <h3 class="text-lg font-bold">Turbina dos!</h3>
-            <p class="py-4">Press ESC key or click outside to close</p>
+            <h3 class="text-4xl font-bold pb-8">Turbina de reacción F300 D</h3>
+            <Image class="py-4" src={turbinaDos} alt="turbina de reaccion f300 d" />
+            <h3 class="text-lg font-bold py-4">Elementos indicados en la figura</h3>
+            <ol class="lista-elementos">
+              <li>Medidor de presión de entrada</li>
+              <li>Salida de aire a la unidad F300</li>
+              <li>Tornillo de ajuste para la polea de frenado</li>
+            </ol>
           </div>
           <form method="dialog" class="modal-backdrop">
             <button>close</button>
@@ -86,8 +98,14 @@ const { title } = Astro.props;
         <!-- Open the modal using ID.showModal() method -->
         <dialog id="my_modal_4" class="modal">
           <div class="modal-box">
-            <h3 class="text-lg font-bold">Lubricación!</h3>
-            <p class="py-4">Press ESC key or click outside to close</p>
+            <h3 class="text-4xl font-bold pb-8">Lubricación de equipos</h3>
+            <Image class="py-4" src={lubricacionDos} alt="lubricacion dos" />
+            <p class="text-center font-bold pt-8 pb-4 subtitle">El manejo del equipo requiere de una lubricación de la turbina con aceite 3 en 1 antes de su puesta en marcha:</p>
+            <ol class="lista-elementos">
+              <li class="pb-4">Ubicar la disponibilidad de lubricante “3 en 1”, si no se encuentra en el área de trabajo, preguntar al técnico encargado del laboratorio).</li>
+              <li class="pb-4">Retirar la arandela móvil situada en la parte trasera de la turbina para acceder al espacio de lubricación (Figura C. 2).</li>
+              <li>Aplicar 4 gotas del aceite de lubricación y volver a ubicar la arandela móvil.</li>
+            </ol>
           </div>
           <form method="dialog" class="modal-backdrop">
             <button>close</button>
@@ -119,10 +137,16 @@ const { title } = Astro.props;
     flex-direction: column;
     align-items: center;
     max-height: 95dvh;
+    padding-top: 32px;
+    padding-bottom: 40px;
   }
 
   .modal-box .lista-elementos {
     list-style: auto;
     max-width: 400px;
+  }
+
+  .modal-box .subtitle {
+    max-width: 430px;
   }
 </style>
