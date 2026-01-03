@@ -1,13 +1,23 @@
 @import "tailwindcss";
 @plugin "daisyui" {
   /* themes: light --default; */
-  themes: light --default, dark --prefersdark;
+  themes: corporate --default;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+body {
+  background: #F5F5F5;
+}
+
 .modal-box {
   max-width: 43rem;
+}
+
+.btn-primary {
+  background: oklch(0.56 0.16 134.74);
+  border: 0;
+  text-transform: uppercase;
 }

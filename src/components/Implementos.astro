@@ -1,6 +1,11 @@
 ---
 import { Image } from "astro:assets";
 
+import bata from "../img/bata.webp";
+import tapaOidos from "../img/tapa-oidos.jpg";
+import calzado from "../img/calzado.webp";
+import gafas from "../img/gafas.jpeg";
+
 const { title } = Astro.props;
 ---
 
@@ -14,17 +19,17 @@ const { title } = Astro.props;
   <div class="relative mx-auto w-full max-w-5xl overflow-visible">
 
   <!-- Center vertical line -->
-  <div class="pointer-events-none absolute left-1/2 top-0 bottom-0 w-[3px] -translate-x-1/2 bg-white/80 z-0"></div>
+  <div class="pointer-events-none absolute left-1/2 top-0 bottom-0 w-[3px] -translate-x-1/2 bg-black z-0"></div>
 
   <!-- ITEM 1 (LEFT TEXT) -->
   <div class="relative z-10 my-36">
     <div class="absolute left-1/2 -translate-x-1/2">
-      <div class="h-28 w-28 rounded-full bg-white p-3">
-        <img src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp" class="h-full w-full rounded-full object-cover" />
+      <div class="h-40 w-40 rounded-full bg-white p-3">
+        <Image src={bata} alt="bata" class="h-full w-full rounded-full object-cover" />
       </div>
     </div>
 
-    <div class="pr-[60%] pt-[3%] text-right">
+    <div class="pr-[60%] pt-[6%] text-right">
       <div class="text-3xl font-semibold text-base-content">
         Bata de Laboratorio
       </div>
@@ -34,12 +39,12 @@ const { title } = Astro.props;
   <!-- ITEM 2 (RIGHT TEXT) -->
   <div class="relative z-10 my-36">
     <div class="absolute left-1/2 -translate-x-1/2">
-      <div class="h-28 w-28 rounded-full bg-white p-3">
-        <img src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp" class="h-full w-full rounded-full object-cover" />
+      <div class="h-40 w-40 rounded-full bg-white p-3">
+        <Image src={tapaOidos} alt="tapa oidos" class="h-full w-full rounded-full object-cover" />
       </div>
     </div>
 
-    <div class="pl-[60%] pt-[3%] text-left">
+    <div class="pl-[60%] pt-[6%] text-left">
       <div class="text-3xl font-semibold text-base-content">
         Tapa Oídos
       </div>
@@ -49,14 +54,14 @@ const { title } = Astro.props;
   <!-- ITEM 3 (LEFT TEXT) -->
   <div class="relative z-10 my-36">
     <div class="absolute left-1/2 -translate-x-1/2">
-      <div class="h-28 w-28 rounded-full bg-white p-3">
-        <img src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp" class="h-full w-full rounded-full object-cover" />
+      <div class="h-40 w-40 rounded-full bg-white p-3">
+        <Image src={calzado} alt="calzado" class="h-full w-full rounded-full object-cover" />
       </div>
     </div>
 
-    <div class="pr-[60%] pt-[3%] text-right">
+    <div class="pr-[60%] pt-[6%] text-right">
       <div class="text-3xl font-semibold text-base-content">
-        Elemento 3
+        Calzado de protección
       </div>
     </div>
   </div>
@@ -64,14 +69,14 @@ const { title } = Astro.props;
   <!-- ITEM 4 (RIGHT TEXT) -->
   <div class="relative z-10 my-36">
     <div class="absolute left-1/2 -translate-x-1/2">
-      <div class="h-28 w-28 rounded-full bg-white p-3">
-        <img src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp" class="h-full w-full rounded-full object-cover" />
+      <div class="h-40 w-40 rounded-full bg-white p-3">
+        <Image src={gafas} alt="gafas" class="h-full w-full rounded-full object-cover" />
       </div>
     </div>
 
-    <div class="pl-[60%] pt-[3%] text-left">
+    <div class="pl-[60%] pt-[6%] text-left">
       <div class="text-3xl font-semibold text-base-content">
-        Elemento 4
+        Gafas de protección
       </div>
     </div>
   </div>

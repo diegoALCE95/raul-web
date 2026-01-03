@@ -45,7 +45,7 @@ const { title } = Astro.props;
           </form>
         </dialog>
 
-        <a class="btn" href="../img/1-guia-conexion-principal-f300.pdf" download>Descargar</a>
+        <a class="btn btn-primary" href="../img/1-guia-conexion-principal-f300.pdf" download>Descargar</a>
       </div><!-- .modal-wrapper -->
 
       <div class="modal-wrapper">
@@ -68,7 +68,7 @@ const { title } = Astro.props;
           </form>
         </dialog>
 
-        <a class="btn" href="../img/2-guia-turbina-de-impulso.pdf" download>Descargar</a>
+        <a class="btn btn-primary" href="../img/2-guia-turbina-de-impulso.pdf" download>Descargar</a>
       </div><!-- .modal-wrapper -->
 
       <div class="modal-wrapper">
@@ -90,7 +90,7 @@ const { title } = Astro.props;
           </form>
         </dialog>
 
-        <a class="btn" href="../img/3-guia-practica-turbina-reaccion-uno.pdf" download>Descargar</a>
+        <a class="btn btn-primary" href="../img/3-guia-practica-turbina-reaccion-uno.pdf" download>Descargar</a>
       </div><!-- .modal-wrapper -->
 
       <div class="modal-wrapper">
@@ -99,7 +99,7 @@ const { title } = Astro.props;
         <dialog id="my_modal_4" class="modal">
           <div class="modal-box">
             <h3 class="text-4xl font-bold pb-8">Lubricación de equipos</h3>
-            <Image class="py-4" src={lubricacionDos} alt="lubricacion dos" />
+            <Image class="py-4 object-cover max-w-[50%]" src={lubricacionDos} alt="lubricacion dos" />
             <p class="text-center font-bold pt-8 pb-4 subtitle">El manejo del equipo requiere de una lubricación de la turbina con aceite 3 en 1 antes de su puesta en marcha:</p>
             <ol class="lista-elementos">
               <li class="pb-4">Ubicar la disponibilidad de lubricante “3 en 1”, si no se encuentra en el área de trabajo, preguntar al técnico encargado del laboratorio).</li>
@@ -112,7 +112,9 @@ const { title } = Astro.props;
           </form>
         </dialog>
 
-        <div class="md:pb-10"></div>
+        <a class="btn btn-primary" onclick="my_modal_4.showModal();">Ver más</a>
+
+        <!-- <div class="md:pb-10"></div> -->
       </div><!-- .modal-wrapper -->
     </div>
   </div>

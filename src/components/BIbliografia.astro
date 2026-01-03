@@ -15,6 +15,45 @@ const { title } = Astro.props;
     <li>[4] Connor, N. (2020b, enero 8). ¿Qué es la turbina de impulso y la turbina de reacción?        Definición. Thermal Engineering.</li>
     <li>[5] Cuadrado, Ilba, Cadavid, Francisco, Agudelo, John, Sánchez, Carlos. (2008). Modelado de flujo compresible unidimensional e isentrópico por el método de volúmenes finitos. Dyna, 75(155), 199-210.</></li>
   </ul>
+
+  <div class="py-4"></div>
+
+  <details class="collapse bg-base-100 border border-base-300" name="my-accordion-det-1">
+    <summary class="collapse-title font-semibold">Ver más</summary>
+    <div class="collapse-content">
+      <ul class="bibliografia">
+        <li>[6] Dixon, S. L., & Hall, C. A. (2010). Fluid Mechanics and Thermodynamics of Turbomachinery (6ª ed.).</li>
+
+        <li>[7] Dufour, D. J., & Cormier, S. (2015). Energy Recovery in Industrial Processes: A Review of Technologies and Applications. Renewable and Sustainable Energy Reviews, 41, 97–107.</li>
+
+        <li>[8] Durrani, M. A., & Tharwat, M. (2018). Hydraulic Turbines: Theory and Applications. Springer.</li>
+
+        <li>[9] Elsevier. (2021). Sustainable Fuel Technologies Handbook. Hydraulic reaction turbines and their use in power generation.</li>
+
+        <li>[10] EMS Power Machines. (2024). How do steam turbines work.</li>
+
+        <li>[11] Fox, R. W., McDonald, A. T., & Pritchard, P. J. (2015). Introduction to Fluid Mechanics (9th ed.). John Wiley & Sons.</li>
+
+        <li>[12] García Morales, H., & Muñoz Guerrero, H. (2018). Implementación de prácticas y módulo didáctico de flujos compresibles en tuberías y boquillas para el laboratorio de procesos 1 (Trabajo de grado para optar al título de Ingeniero Químico, Universidad Industrial de Santander). Bucaramanga, Colombia.</li>
+
+        <li>[13] Jansen, J. (2019). Fluid Mechanics for Engineers. Oxford University Press.</li>
+
+        <li>[14] Khalil, A., & Sayed, H. (2019). Gas Turbines: A Handbook of Air, Steam, and Gas Turbines. Academic Press.</li>
+
+        <li>[15] Moran, M. J., Shapiro, H. N., Boettner, D. D., & Bailey, M. B. (2018). Fundamentals of Engineering Thermodynamics (9th ed.). John Wiley & Sons.</li>
+
+        <li>[16] Munson, B. R., Okiishi, T. H., & Huebsch, W. W. (2009). Turbomachines. In Fundamentals of Fluid Mechanics (6th ed.). John Wiley & Sons.</li>
+
+        <li>[17] Perry, R. H., & Green, D. W. (2019). Perry’s Chemical Engineers’ Handbook (9th ed.). McGraw-Hill.</li>
+        <li>[18] Sen, M., & Bhowmik, S. (2020). Principles of Turbomachinery in Air-Breathing Engines. Springer.</li>
+        <li>[19] Sonntag, R. E., Borgnakke, C., & Van Wylen, G. J. (2021). Fundamentals of Thermodynamics (9th ed.). John Wiley & Sons.</li>
+        <li>[20] White, F. M. (2016). Fluid Mechanics (8th ed.). McGraw-Hill Education.</li>
+        <li>[21] Wragg, D. W. (1974). Dictionary of Aviation. Osprey Publishing.</li>
+        <li>[22] Yunus, C., & Rogers, R. (2020). Compressible Fluid Flow and Gas Dynamics. Pearson Education.</li>
+      </ul>
+
+    </div>
+  </details>
 </div>
 
 <style>
@@ -28,7 +67,12 @@ const { title } = Astro.props;
     row-gap: 15px;
   }
 
-  .bibliografia li {
+  .collapse {
+    max-width: 900px;
+    margin: auto;
+  }
+
+  li {
     font-size: 20px;
   }
 </style>
